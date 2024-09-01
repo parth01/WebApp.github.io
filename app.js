@@ -1,13 +1,13 @@
 // DOM Elements
-const profileInput = document.getElementById('profileInput');
-const saveButton = document.getElementById('saveButton');
-const deleteButton = document.getElementById('deleteButton');
-const profileDropdown = document.getElementById('profileDropdown');
-const toast = document.getElementById('toast');
-const calculateButton = document.getElementById('calculateButton');
-const totalLabel = document.getElementById('totalLabel');
-const addItemButton = document.getElementById('addItemButton');
-const stockTableBody = document.querySelector('#stockTable tbody');
+const profileInput = document.getElementById('nameInput') as HTMLInputElement;
+const saveButton = document.getElementById('saveButton') as HTMLButtonElement;
+const deleteButton = document.getElementById('deleteButton') as HTMLButtonElement;
+const profileDropdown = document.getElementById('nameDropdown') as HTMLSelectElement;
+const toast = document.getElementById('toast') as HTMLDivElement;
+const calculateButton = document.getElementById('calculateButton') as HTMLButtonElement;
+const totalLabel = document.getElementById('totalLabel') as HTMLDivElement;
+const addItemButton = document.getElementById('addItemButton') as HTMLButtonElement;
+const stockTableBody = document.querySelector('#stockTable tbody') as HTMLTableSectionElement;
 // Load profiles from localStorage
 let profiles = JSON.parse(localStorage.getItem('profiles') || '[]');
 // Dummy profiles to add if no profiles exist
