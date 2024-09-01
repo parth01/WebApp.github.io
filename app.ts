@@ -9,6 +9,7 @@ const totalLabel = document.getElementById('totalLabel') as HTMLDivElement;
 const addItemButton = document.getElementById('addItemButton') as HTMLButtonElement;
 const stockTableBody = document.querySelector('#stockTable tbody') as HTMLTableSectionElement;
 
+
 // Load profiles from localStorage
 let profiles: string[] = JSON.parse(localStorage.getItem('profiles') || '[]');
 
