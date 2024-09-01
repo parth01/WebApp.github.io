@@ -8,6 +8,7 @@ const calculateButton = document.getElementById('calculateButton') as HTMLButton
 const totalLabel = document.getElementById('totalLabel') as HTMLDivElement;
 const addItemButton = document.getElementById('addItemButton') as HTMLButtonElement;
 const stockTableBody = document.querySelector('#stockTable tbody') as HTMLTableSectionElement;
+
 // Load profiles from localStorage
 let profiles = JSON.parse(localStorage.getItem('profiles') || '[]');
 // Dummy profiles to add if no profiles exist
