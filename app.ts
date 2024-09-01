@@ -12,6 +12,9 @@ const stockTableBody = document.querySelector('#stockTable tbody') as HTMLTableS
 // Load profiles from localStorage
 let profiles: string[] = JSON.parse(localStorage.getItem('profiles') || '[]');
 
+// Dummy profiles to add if no profiles exist
+const dummyProfiles = ['Default Profile', 'Guest Profile', 'Sample Profile'];
+
 // Sample items to add to the table
 const items = [
     { name: 'tyloshin', quantity:0 , rate: 3436 },
@@ -38,6 +41,16 @@ const items = [
     { name: 'Milunum', quantity: 5, rate: 2 },
     { name: 'Futres-c', quantity: 5, rate: 2 },
 ];
+
+
+// Function to initialize dummy profiles
+function initializeDummyProfiles() {
+    // Only add dummy profiles if no profiles exist
+    if (profiles.length === 0) {
+        profiles = [...dummyProfiles];
+        localStorage.setItem('profiles', JSON.stringify(profiles));
+    }
+}
 
 // Function to update dropdown with profiles
 function updateDropdown() {
@@ -151,5 +164,6 @@ calculateButton.addEventListener('click', calculateAmounts);
 addItemButton.addEventListener('click', promptAddItem);
 
 // Initial setup
-updateDropdown();
-initializeDummyItems();
+initializeDummyProfiles(); // Initialize dummy profiles if none exist
+updateDropdown();         // Update the dropdown to reflect the profiles
+initializeDummyItems();   // Initialize dummy stock items in the table
