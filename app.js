@@ -42,7 +42,6 @@ const items = [
     { name: 'Futres-c', quantity: 5, rate: 2 },
 ];
 
-
 // Function to initialize dummy profiles
 function initializeDummyProfiles() {
     // Only add dummy profiles if no profiles exist
