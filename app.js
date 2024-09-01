@@ -12,10 +12,31 @@ const stockTableBody = document.querySelector('#stockTable tbody');
 let profiles = JSON.parse(localStorage.getItem('profiles') || '[]');
 // Sample items to add to the table
 const items = [
-    { name: 'Item 1', quantity: 2, rate: 50 },
-    { name: 'Item 2', quantity: 3, rate: 30 },
-    { name: 'Item 3', quantity: 5, rate: 20 }
+    { name: 'tyloshin', quantity:0 , rate: 3436 },
+    { name: 'neodox', quantity:0 , rate: 1 },
+    { name: 'vimeral', quantity: 5, rate: 2 },
+    { name: 'groviplas', quantity: 5, rate: 1 },
+    { name: 'E-Sol peo', quantity: 5, rate: 2 },
+    { name: 'nutrigro', quantity: 5, rate: 1 },
+    { name: 'Amenovat', quantity: 5, rate: 2 },
+    { name: 'Amprolium', quantity: 5, rate: 2 },
+    { name: 'Meriflox', quantity: 5, rate: 2 },
+    { name: 'Fit-5', quantity: 5, rate: 2 },
+    { name: 'Tatraciclin', quantity: 5, rate: 3 },
+    { name: 'Success', quantity: 5, rate: 7 },
+    { name: 'Broten', quantity: 5, rate: 2 },
+    { name: 'Bayroshin', quantity: 5, rate: 2 },
+    { name: 'U.T.Mint', quantity: 5, rate: 2 },
+    { name: 'Broten', quantity: 5, rate: 2 },
+    { name: 'VEGUT', quantity: 5, rate: 2 },
+    { name: 'Hapeto Car', quantity: 5, rate: 2 },
+    { name: 'Milunum', quantity: 5, rate: 2 },
+    { name: 'ESB3', quantity: 5, rate: 2 },
+    { name: 'Proteshin', quantity: 5, rate: 2 },
+    { name: 'Milunum', quantity: 5, rate: 2 },
+    { name: 'Futres-c', quantity: 5, rate: 2 },
 ];
+
 // Function to update dropdown with profiles
 function updateDropdown() {
     profileDropdown.innerHTML = `<option value="" disabled selected>Select a profile</option>`;
