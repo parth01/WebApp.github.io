@@ -1,8 +1,8 @@
 // DOM Elements
-const profileInput = document.getElementById('profileInput') as HTMLInputElement;
+const profileInput = document.getElementById('nameInput') as HTMLInputElement;
 const saveButton = document.getElementById('saveButton') as HTMLButtonElement;
 const deleteButton = document.getElementById('deleteButton') as HTMLButtonElement;
-const profileDropdown = document.getElementById('profileDropdown') as HTMLSelectElement;
+const profileDropdown = document.getElementById('nameDropdown') as HTMLSelectElement;
 const toast = document.getElementById('toast') as HTMLDivElement;
 const calculateButton = document.getElementById('calculateButton') as HTMLButtonElement;
 const totalLabel = document.getElementById('totalLabel') as HTMLDivElement;
