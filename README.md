@@ -1,0 +1,30 @@
+# Medicine Details Manager
+
+This project is a web-based application designed to manage medicine details, including name, item entries, and calculations. Users can add, save, and delete name, input item details with quantities and rates, calculate totals, and print the complete page.
+
+## Features
+
+- Add, save, and delete user name.
+- Add items with names, quantities, and rates.
+- Calculate the total amounts for items based on quantities and rates.
+- Print the entire page with all entered details.
+- User-friendly interface with real-time updates.
+
+## Technologies Used
+
+- HTML, CSS, JavaScript (TypeScript).
+- Local Storage for name management.
+
+## Getting Started
+
+### Prerequisites
+
+- Web browser (Chrome, Firefox, Edge, Safari).
+- Basic knowledge of HTML, CSS, and JavaScript.
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/medicine-details-manager.git
