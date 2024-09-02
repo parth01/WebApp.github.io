@@ -38,5 +38,3 @@ This project is a web-based application designed to manage medicine details, inc
 - **Disclaimers**: Highlight that no warranties are provided and the software is used at the user's own risk.
 - **Medical Disclaimer**: Important for any project related to healthcare information.
 
-Feel free to replace placeholders like `Your Name` and `your-email@example.com` with your actual details, and adjust any content as needed. Let me know if you need further adjustments!
-
